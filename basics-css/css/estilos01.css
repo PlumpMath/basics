@@ -1,0 +1,67 @@
+/* el aserisco es el selector universal*/
+/*
+* {margin: 0;
+    padding: 0;}
+*/
+
+/*Selectores de etiqueta*/
+body {background:#1f4350;
+        color:aquamarine;
+        }
+h1 {color: aquamarine;
+    background: #d312af;
+    padding: 10px;
+    border: 3px solid;
+    width: 70%;
+    text-align: center ;
+     
+    }
+/*Puedo aplicar una propiedad a varios selectores separándolos por comas*/
+h2, h3, h4, h5 {color:cadetblue;}
+
+p {color: azure; font-size: 18px;}
+a {color:bisque}
+
+/*Selectores descendentes*/
+
+/*En la siguiente línea estamos apuntando a los elementos a que estén dentro de algún elemento p. Los elementos a que estén fuera de p, no se verán afectados*/
+p a {color:cornflowerblue;}
+
+/*Selectores de clase: usan un punto antes del nombre de la clase para indentificarla*/
+/*Todos los elementos que usen la clase .green heredarán sus propiedades*/
+.green {color: greenyellow}
+
+/*Se puede combinar la selección por clase y la selección descendente*/
+/*La siguiente regla sólo se aplica a los elemento que tengan la clase .darkgreen pero que a su vez estén dentro de un párrafo*/
+p .darkgreen {color: darkgreen}
+
+/*Seleccionar por atributos*/
+/*La siguiente regla se aplica a la etiqueta a en la que a su vez el atributo sea el especificado entre corchetes*/
+a[href="www.mi-mina.com"] {color:crimson}
+
+/*También se puede usar id. Un selector de id se identifica por una #*/
+/*Los id se están volviendo obsoletos en favor de las clases*/
+
+/*Sobre medidas*/
+/*Hay medidas relativas: px, em, rem y absolutas: cm, mm, in que no se usan nunca*/
+/*px, em, rem se usan sobre todo para las fuentes*/
+/*También se pueden definir tamaños con porcentajes. Normalmente se usan para las cajas*/
+
+/*1em representa un valor del elemento padre o del elemento más cercano en su tamaño de fuente  */
+/*Por defecto, si no modificamos el font-size del body es 16 píxeles*/
+.bodypordefecto {font-size: 16px;}
+.normal {font-size: 1em; } /*En este caso como no hemos cambiado en el body el font-size, 1em son 16 píxeles */
+.doble {font-size: 1.2em; }
+
+div  {font-size: 25px; /*Como el font-size a cambiado respecto del que viene por defecto para el body (16px) las clases .normal y .doble que están definidas de una forma relativa tomarán esta medida de referencia*/
+        color:bisque;
+        background:rgba(51, 135, 80, 0.3) ; /*Otra forma de poner colores, rgb() o rgba() que incluye un valor alpha de 0 a 1*/        
+        margin:30px; /*Márgenes externos*/
+        padding:20px 10px; /*Márgenes internos*/ /*Cuando hay dos medidas la primera son los márgenes superior e inferior, y la segunda las de los márgenes laterales*/
+        border: 10px dotted; 
+        display: inline-block;
+       }
+
+/*Modelo de caja*/
+/*Existen elementos de tipo bloque (como los div, p...) y otros son elementos de tipo línea (como los enlaces). Los elementos en bloque se estiran todo lo que pueden a lo ancho de la pantalla y los elementos tipo línea sólo ocupan el espacio que necesitan.*/
+

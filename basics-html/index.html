@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+
+<!-- El head es la parte no visible de la página pero donde va información importante -->
+<head>
+<title>Plantilla básica html</title>
+<!--Un comentario se añade con Ctrl-/-->
+<!--Metas-->
+<!--utf-8 permite una mayor compatibilidad para acentos y la letra ñ-->
+<meta charset="utf-8" />
+<meta name="description" content="Información sobre la página web. No más de 150 caracteres."/>
+<meta name="keywords" content="palabras clave separadas por comas. Google ya no lo utiliza pero otros buscadores sí"/>
+<!--links: Defines the relationship between a document and an external resource-->
+<link rel="stylesheet" href="css/estilos.css" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+ 
+<body>
+   
+    <header>
+    <!-- Solo es recomendable poner un h1 por página por cuestiones de SEO-->
+    <!-- El header es la cabecera de la página donde va el título, el logo y la descripción -->
+       <h1>H1. Mi sitio web</h1>
+       <p>Mi sitio web creado en html5</p>
+    </header>
+    
+    <section>
+       <article>
+           <h2>H2. Article. Título de contenido</h2>   
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reiciendis quasi at, laudantium modi quam neque maiores molestias earum quisquam magni beatae nostrum similique, nisi explicabo! Esse distinctio qui mollitia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reiciendis quasi at, laudantium modi quam neque maiores molestias earum quisquam magni beatae nostrum similique, nisi explicabo! Esse distinctio qui mollitia.</p>    
+           <p>Aside. <b>negrita</b> dolor <strong>strong/fuerte, el resultado es igual que la negrita pero define texto importante y eso es tenido en cuenta por los buscadores</strong> tempore <i>sit amet</i>, consectetur <b><i>negritas e itálicas</i></b>. <u>subrayado</u> tempore. <br> "br" es un punto y aparte. Voluptatibus molestias. Ipsa doloribus rerum consequuntur enim, tenetur temporibus recusandae aliquid quod, vitae repellat, adipisci iure doloremque aspernatur, beatae.</p>
+           <pre>Texto Preformato. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </pre>
+           <code>Código en varias líneas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quaerat tempore voluptatibus molestias. Ipsa doloribus rerum consequuntur enim, tenetur temporibus recusandae aliquid quod, vitae repellat, adipisci iure doloremque aspernatur, beatae.</code>
+           <hr>
+           <p>"hr" introduce una línea horizontal. Se usa para separar contenido</p>
+           <p><s>Texto que ya no es correcto. Aparece tachado.</s>, consectetur adipisicing elit. <del>Texto que ha sido eliminado. Es como el tag "s". </del> tenetur temporibus recusandae aliquid quod, vitae repellat, adipisci iure doloremque aspernatur, beatae. <blockquote>Este texto es una cita. quaerat tempore voluptatibus molestias. Ipsa doloribus rerum consequuntur enim, tenetur temporibus recusandae aliquid quod, vitae repellat, adipisci iure doloremque aspernatur, beatae.</blockquote></p>
+       </article>
+    </section>
+    
+    <!-- Aside es el sidebar o barra lateral -->
+    <aside>
+      <h3>H3. Aside. Titulo de contenido</h3>
+        <h4>H4. Lista desordenada</h4>
+            <ul>
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Milk</li>
+            </ul>
+        <h4>H4. Lista ordenada</h4>
+            <ol>
+                <li>Item #1</li>
+                <li>Item #2</li>
+                <li>Item #3</li>
+                <li>Item #4</li>
+            </ol>
+    </aside>
+    
+    
+    
+    <footer>
+        footer
+    </footer>
+    
+</body>
+</html>
+
+

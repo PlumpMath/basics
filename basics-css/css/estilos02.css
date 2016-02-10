@@ -1,0 +1,122 @@
+
+body {background: url(../images/triangulos-azules.jpg);
+    background-attachment:fixed;
+    background-repeat: repeat-x;
+    background-position: center 0; /*con el cero le decimos que no lo desplace hacia abajo*/
+}
+
+/*
+div {background: url(../images/triangulos-azules.jpg);
+padding: 20px 20px;
+}*/
+
+
+.caja {
+    /*position: fixed; si hacemos un scroll no se desplaza nunca*/
+    position: static; /*Si ponemos static, top, left... dejan de tener validez*/
+/*
+    top: 100px;
+    bottom: ;
+    right: ;
+    left: 300px;
+*/
+}
+
+h1 {font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background: rgba(0,100,100,0.4);
+    color: hsl(190, 60%, 35%);
+    text-transform: lowercase;
+    letter-spacing: 20px;
+}
+
+/*Los enlaces tienen 4 estados: si no lo hemos visitado, si lo hemos visitado, el hover, al darle el click*/
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    background: #1ea1a8;
+    box-shadow: 2px 2px 6px grey;
+    display: inline-block;
+    border-radius: 5px;
+    
+} /*Con esto podemos quitarle el underline a los enlaces*/
+
+/*Pseudoclases*/
+a:link {
+    color: white;
+}
+
+a:visited {
+    color:aquamarine ;
+}
+
+a:hover {    /*hover es una pseudoclase que se usa no solo para links*/
+    text-decoration: underline;
+    background: #1a8d93;
+    color: white;
+    box-shadow: 1px 1px 3px grey;
+}
+
+a:active {
+    background: red;
+}
+
+p { clear: both;
+    color: #1a6284;
+    font-family: sans-serif, monospace; /*la segunda fuente es la opcional, la que mostraría si no encuentra la primera. Se pueden poner varias opciones*/
+    font-size: 20px;
+    font-weight: bold; /*También se pueden usar números, pero depende de la fuente*/
+    text-align: left;
+    line-height: 25px; /*Tamaño de la línea*/
+    word-spacing: 15px;
+        
+}
+
+div {width: 100%;
+    
+    /*float:left; Es una forma de posicionamiento que no usa position*/
+                /*Esta es la base del diseño en internet*/
+} 
+
+img {
+    height: auto;
+    width: 200px;
+    /*width: 100%; /*La imagen toma el 100% del contenedor en el que esté metida, en este caso en un div de 300x300px*/
+    /*Es muy importante trabajar con porcentajes porque es más responsive*/
+    margin: auto; /*Margen automático, centra la imágen dentro del contenedor en el que se encuentre pero para ello hay que especificar display: block; porque las imágenes por defecto son en línea*/
+    display: block;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+ul {
+    list-style-type:square;
+}
+ul > ul {
+    list-style-type:circle;
+}
+ul > ul > ul{
+    list-style-type:disc;
+}
+
+ol {
+    list-style-type: upper-latin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

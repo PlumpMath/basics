@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+
+<head>
+    <title>Plantilla básica html</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Información sobre la página web. No más de 150 caracteres."/>
+    <meta name="keywords" content="palabras clave separadas por comas. Google ya no lo utiliza pero otros buscadores sí"/>
+    <!--links: Defines the relationship between a document and an external resource-->
+    <!--Estilos-->
+    <!--La mejorforma de trabajar con estilos es importando un archivo css-->
+    <link rel="stylesheet" href="css/estilos03.css" />
+    <!--También se pueden definir en el mismo archivo así: -->
+    <style type="text/css">
+        /*reglas CSS*/
+    </style>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+ 
+<body>
+ 
+   <ul class="menu">
+       <li><a href="#">Inicio</a></li>
+       <li><a href="#">Arquitectura</a></li>
+       <li><a href="#">Diseño</a></li>
+       <li><a href="#">Textos</a></li>
+       <li><a href="#">Contacto</a></li>
+   </ul>
+   <br><br>
+    <table>
+        <tr>
+            <td>Item#1</td>
+            <td>Item#2</td>
+            <td>Item#3</td>
+            <td>Item#4</td>
+            <td>Item#5</td>
+        </tr>
+        <tr>
+            <td>Item#1</td>
+            <td>Item#2</td>
+            <td>Item#3</td>
+            <td>Item#4</td>
+            <td>Item#5</td>
+        </tr>
+        <tr>
+            <td>Item#1</td>
+            <td>Item#2</td>
+            <td>Item#3</td>
+            <td>Item#4</td>
+            <td>Item#5</td>
+        </tr>
+        <tr>
+            <td>Item#1</td>
+            <td>Item#2</td>
+            <td>Item#3</td>
+            <td>Item#4</td>
+            <td>Item#5</td>
+        </tr>
+        <tr>
+            <td>Item#1</td>
+            <td>Item#2</td>
+            <td>Item#3</td>
+            <td>Item#4</td>
+            <td>Item#5</td>
+        </tr>
+    </table>
+    <br>
+    
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Escribe tu mail">
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
+
+
