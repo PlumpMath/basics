@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom radio Buttons and Checkboxes</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700' type='text/css'>
+    
+</head>
+
+<body>
+    <div class="wrap"> 
+    <!--Usamos esta clase wrap para centrar el contenido y darle un ancho de 1000px-->
+        <form action="" class="formulario">
+            <div class="radio">
+                <h2>Radio Buttons</h2>
+                
+                <input type="radio" name="animal" id="perro">
+                <label for="perro">Perro</label>
+                <!--Label se relaciona con el imput através de la id. Además de añadir una etiqueta en el browser, se puede clicar sobre el texto para activar el radio button-->
+                <input type="radio" name="animal" id="gato">
+                <label for="gato">Gato</label>
+                <input type="radio" name="animal" id="loro">
+                <label for="loro">Loro</label>
+            </div>
+            
+            <div class="checkbox">
+                <h2>Checkboxes</h2>
+                
+                <input type="checkbox" name="checkbox" id="checkbox1">
+                <label for="checkbox1">checkbox1</label>
+                <input type="checkbox" name="checkbox" id="checkbox2">
+                <label for="checkbox2">checkbox2</label>
+            </div>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

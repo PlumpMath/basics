@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro</title>
+</head>
+<body>
+    <form action="" name="formulario" method="get"> 
+    <!--El método get es para mandar información no demasiado larga y poco comprometida, porque se ve en la ruta. Si queremos que el envío no se vea y esté más protegido, usamos POST-->
+    <!--The action attribute defines the action to be performed when the form is submitted.-->
+    <!--The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form-->
+       <fieldset>
+        <!--Fieldset encapsula todo el lformulario en una caja-->
+          <legend>Personal Information</legend>
+            <!--Título del fieldset-->
+           Nombre: 
+            <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Escribe tu nombre" autofocus><br><br>
+            <!--To be submitted correctly each input field must have a name attribute.-->
+            <!--autofocus coloca el cursor automáticamente en el formulario-->
+            <input type="radio" name="genero" id="hombre" value="Hombre">
+            Hombre
+            <input type="radio" name="genero" id="mujer" value="Mujer">
+            Mujer <br> <br>
+            <input type="checkbox" name="condiciones" id="terminos" value="terminos"> Términos y condiciones <br><br>
+            <input type="submit" id="btn" name="btn" value="Enviar">
+            <!--Añadimos required a los campos que sean obligatorios, ahora no lo hacemos porque lo vamos a hacer con js-->
+       </fieldset>
+    </form>
+    
+    
+    
+    <script src="js/intro11.js"></script> 
+<!--Los códigos script es mejor ponerlo al final del body, por si hay algún problema con él, no bloquee la carga de toda la página.-->
+</body>
+</html>

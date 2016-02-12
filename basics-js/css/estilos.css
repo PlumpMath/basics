@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/triangulos-azules.jpg) #000;
+    /*Como este archivo estilos.css está dentro de la carpeta css, para acceder a lo que está dentro de la carpeta images, primero tengo que subir una carpeta con ../  */
+    /*Si no carga la imagen, el fondo será de color #000 */
+    background-size: cover; /*La imagen se adapta al ancho de la pantalla del usuario*/
+    color: #fff;
+    font-size: 16px;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 1000px;
+/*    margin: auto;*/
+}
+
+.widget {
+    width: 60%;
+    margin: 2em; /*Equivale a 32px*/
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha {
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125em; /*Equivale a 5px*/
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj {
+    font-family: Oswald, Arial;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    font-size: 4em;
+}
+
+.reloj .caja-segundos {
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+    display: block;
+    font-size: 2rem;
+}
+
+
+
+
+
