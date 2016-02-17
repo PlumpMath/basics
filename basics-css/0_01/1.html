@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        body {
+            background-image: url(01.jpg);
+        }
+        
+        div {
+            border: 1px solid #5e877a;
+            margin: 10px 0 10px 40px;
+            padding: 1em;
+            width: 330px;
+            position: relative;
+            overflow: hidden;
+            background: white;
+            box-shadow: 1px 1px 1px grey;
+            box-sizing: border-box;
+        }
+             
+        div img {
+            float: left;
+            top: 50px;
+            left: 50px;
+        }
+        
+        div p {
+            display: block;
+            float: left;
+            white-space: pre-wrap;
+            
+        }
+        
+        div.paginado {
+            background: #d1d0d0;
+        }
+        
+        div.paginado a.izq {
+            float: left;
+        }
+        
+        div.paginado a.der {
+            float: right;
+        }
+        
+        a.icono {
+            margin: 10px;
+            padding-left: 20px;
+            background: url(circulo.jpg) no-repeat left center;
+            display: inline-block;
+        }
+        
+        a.btn {
+            margin-left: 30px;
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+            background: #94e0dc;
+            box-shadow: 1px 1px 1px grey;
+        }
+        
+        a.btn:hover {
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+       <div >
+            <img src="abstract-q-c-400-400-6.jpg" alt="Imagen genérica" width="100"/>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus ullamcorper velit eu ipsum. 
+            Ut pellentesque, est in volutpat cursus, risus mi             viverra augue, at pulvinar turpis leo sed orci. Donec ipsum. Curabitur felis dui, ultrices ut, sollicitudin vel, rutrum at, tellus.</p>
+            <a href="#3" class="icono">Enlace a ninguna parte</a>
+            <a href="#3" class="btn">Boton</a>
+        </div>
+        
+        <div class="paginado">
+            <a href="#1" class="izq">&laquo; Anterior</a> 
+            <a href="#2" class="der">Siguiente &raquo;</a>
+        </div>
+    
+</body>
+</html>
