@@ -60,12 +60,12 @@ body
                 &.error
                     border-bottom: $borde solid $error
                     + label
-                        //el "+" es el selector adyacente
+                        //el "+" es el selector adyacente. Con este selector estamos eligiendo los elementos label que aparezcan despues de un elemento input de tipo text, email, password que contenga la clase error.
                         color: $error
             label
                 color: $primary
                 &.label
-                    //trabajamos con la clase label dentro de la etiqueta label porque no queremos mover todos los labels, los raio buttons no queremos que se muevan
+                    //trabajamos con la clase label dentro de la etiqueta label porque no queremos mover todos los labels, los radio buttons no queremos que se muevan
                     position: absolute
                     top: 16px
                     left: 0px
@@ -84,31 +84,78 @@ body
             &.radio label,
                 display: inline-block
                 cursor: pointer
+                //pointer es la manita
                 color: $primary
                 position: relative
+                //Necesito un position relative aquí para poder colocar lo que va en el :before luego de forma absolute
                 padding: 5px 15px 5px 51px
                 font-size: 1em
                 border-radius: 3px
+                //Incluyo un border radios que tendrá sentido cuando se coloree el fondo en el hover
                 -webkit-transition: all .3s ease
                 -o-transition: all .3s ease
                 transition: all .3s ease
                 &:hover
                     background: rgba($light-primary, 1)
                 &:before
+                    //Es necesario poner un content con una cadena de strings vacía.
                     content: ""
                     display: inline-block
                     width: 17px
                     height: 17px
                     position: absolute
+                    //Al usar left estamoso posicionando el before. Si no lo usamos se coloca en relación al padding. Pero al usarlo estamos indicando lo que se tiene que mover hacia la derecha respecto del borde izquierdo del box en el que se encuentra. Son 15px en vez de 17 porque el border tiene un espesor de 2px
                     left: 15px
                     border-radius: 50%
+                    //Para convertirlo en una circunferencia
                     background: none
                     border: $borde solid $primary
-                
-                
-                    
-                
-    
+            &.error
+                label
+                    //Selecciona el elemento etiqueta dentro de un div con clase .input-group y .error. En el caso anterior la clase error se la poníamos directamente al input, no sé por qué aqui cambia
+                    color: $error
+                    &:hover
+                        background: rgba($error, .2)
+                    &:before
+                        border: $borde solid $error
+            &.radio
+                input[type="radio"]
+                    display: none
+                    &:checked + label:before
+                        display: none
+                    &:checked + label
+                        color: $white
+                        background: $primary
+                        padding: 5px 15px
+            &.checkbox
+                label:before 
+                    border-radius: 3px
+                input[type="checkbox"]
+                    display: none
+                    &:checked + label:before
+                        display: none
+                    &:checked + label
+                        color: $white
+                        background: $primary
+                        padding: 5px 15px
+        input[type="submit"]
+            background: $primary
+            border-radius: 1px
+            border: $borde solid $white
+            color: $white
+            cursor: pointer
+            //Para poder agregarle un padding tenemos que agregarle un display inline-block. El botón es un elemento de tipo en linea, pero con inline-block podemos modificar sus propiedades como su altura, el ancho o el padding
+            padding: 15px
+            width: 100%
+            font-family: $font-family
+            font-size: 16px
+            -webkit-transition: all .3s ease
+            -o-transition: all .3s ease
+            transition: all .3s ease
+            &:hover
+                background: #1976D2
+            
+            
     
         
         
