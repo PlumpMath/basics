@@ -1,0 +1,82 @@
+body {
+  background: #e6e6e6;
+}
+
+header {
+ margin: auto;
+ /*margin: auto; nos sirve para centrar este contenedor*/
+ width: 90%;
+ max-width: 800px;
+ font-family: sans-serif;
+}
+
+nav {
+  background:#528fd5;
+	margin-top:20px;
+	position: relative;
+  /*Ponemos la posición relativa la usamos aquí para poder
+  poner posicion absoluta a los hijos y poder colocarlos
+  donde queramos*/
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  /*El margin y el padding se ponen a cero porque los navegadores
+  ponen unos por defecto. No sé por qué no lo pone al principio
+  con el selector universal * */
+  overflow: hidden;
+}
+
+nav > ul > li {
+  /*Estos son los elementos del menu principal: los li que son
+  hijos directos de los ul que son hijos directos de nav*/
+  float: left;
+}
+
+nav a {
+  /*En el ejemplo es nav ul li a, es decir recorre toda la cadena
+  de selectores descendente. Yo lo he hecho así pero no sé si es
+  una buena práctica o no*/
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+nav a:hover{
+  background: #3669a3;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav li:hover > div {
+ display: table;
+ border: 2px #fc6b03 solid;
+}
+/*Hay mucas maneras de acceder a ese div sin peligro a equivocarse
+porque en este ejemplo es el único. Lo importante es que esté suficientemente
+especificado, y en este caso que se muestre sólo cuando se hace un hover
+sobre su elemento padre que es un li*/
+/*En el ejemplo lo selecciona así: nav > ul > li:hover div */
+/*Yo lo he hecho de otra manera, de momento voy a ver si funciona.*/
+
+/*Submenu*/
+nav ul li div {
+  width: 800px;
+  position: absolute;
+  left: 0px;
+  background: #ccc;
+  box-sizing: border-box;
+  display: none;
+
+
+}
+
+nav li:hover > div > ul {
+  display: table-cell;
+}

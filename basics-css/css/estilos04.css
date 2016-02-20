@@ -13,7 +13,7 @@ header, .main, footer {
 }
 
 header nav {
-    background: #67c5c5;
+    background: #68c6c6;
     overflow: hidden; /*Nos sirve para ocultar el contenido que sobrepasa nuestro contenedor. También nos sirve para borrar los float:left*/
 }
 
@@ -63,8 +63,3 @@ footer {
     padding: 10px 0px;
     text-align: center;
 }
-
-
-
-
-

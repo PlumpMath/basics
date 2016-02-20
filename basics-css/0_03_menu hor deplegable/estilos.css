@@ -1,0 +1,69 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+ margin: auto;
+ /*margin: auto; nos sirve para centrar este contenedor*/
+ width: 80%;
+ margin-top: 20px;
+ font-family: sans-serif;
+ /*border: 1px #000 solid;*/
+ background: #fe0909;
+ /*overflow: hidden;*/
+ /*Muy importante el overflow: hidden cuando más tarde los
+ elementos hijo coloquen usando float: left. En este caso
+ da igual porque el color del fondo se lo hemos puesto directamente
+ al enlace y no al header, pero si el color de fondo está
+ definido en el header, puede desaparecer*/
+}
+
+ul {
+  list-style: none;
+}
+
+.nav > li {
+  float: left;
+  background-color: #000;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border: 1px #fff solid;
+}
+
+.nav li a:hover {
+  background-color: #4f4e4d;
+}
+
+.nav li ul {
+  background-color: #373737;
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover > ul{
+  display: block;
+}
+
+.nav li ul li{
+  position: relative;
+}
+
+.nav li ul li ul {
+  position: absolute;
+  right: -140px;
+  /*Si ponemos left: 140px, a primera vista parece que es igual,
+  sin embargo, en el momento que el contenido del primer submenu
+  es muy largo y el contenedor empieza a ser más ancho que 140px
+  el siguiente submenú no se adapta colocándose al final, sino
+  que se queda a 140px*/
+  top: 0px;
+  /*Con top:0px conseguimos que el primer submenú del segundo nivel
+  se coloque a la misma altura que el último submenú del primer nivel.*/
+}
