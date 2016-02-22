@@ -46,7 +46,7 @@ nav a {
   color: #fff;
 }
 
-nav a:hover{
+nav a:hover {
   background: #3669a3;
 }
 
@@ -56,7 +56,6 @@ nav ul li ul {
 
 nav li:hover > div {
  display: table;
- border: 2px #fc6b03 solid;
 }
 /*Hay mucas maneras de acceder a ese div sin peligro a equivocarse
 porque en este ejemplo es el único. Lo importante es que esté suficientemente
@@ -67,16 +66,59 @@ sobre su elemento padre que es un li*/
 
 /*Submenu*/
 nav ul li div {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   position: absolute;
   left: 0px;
   background: #ccc;
   box-sizing: border-box;
   display: none;
-
-
 }
 
-nav li:hover > div > ul {
+nav ul li div ul {
   display: table-cell;
+  /*width: 20%;*/
+  /*Yo no le he puesto el width al 20% y aún así me lo coloca en 5 columnas
+  iguales*/
+  border-right: 1px #e6e6e6 solid;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav li:hover > div > ul:last-child {
+  border: none;
+}
+
+nav ul li div ul li a {
+  color: #000;
+}
+
+nav ul li div ul li a:hover {
+  color: #fff;
+}
+
+.titulo {
+  font-weight: bold;
+   background-color: #000000;
+}
+
+.titulo a {
+  color: #fff;
+  padding: 10px 20px;
+}
+.titulo a:hover {
+  background: none;
+}
+.titulo.azul {
+   background-color: #1b74e9;
+}
+.titulo.rojo {
+   background-color: #bd1818;
+}
+.titulo.verde {
+   background-color: #238c44;
+}
+.titulo.naranja {
+   background-color: #f97204;
 }
