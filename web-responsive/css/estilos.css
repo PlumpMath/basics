@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #d1dae8;
+  font-family: Arial;
+}
+
+.contenedor {
+  /*Para que sea diseño responsive no podemos ponerle un width en px, tiene que
+  ser un porcentaje*/
+  width: 80%;
+  /*Si la pantalla es muy ancha se ve feo, usamos max-width para controlar un
+  ancho máximo*/
+  max-width: 1000px;
+  /*Contenedor nos permite centrar el contenido en la página usando margin auto*/
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background: #599298;
+  /*Añadimos un margin para separarnos arriba y abajo 20px*/
+  margin: 20px 0; /*20px arriba y abajo, 0 a los lados*/
+}
+
+header h1 {
+  color: #fff;
+  padding: 10px 0; /*20px arriba y abajo, 0 a los lados*/
+  text-align: center;
+}
+
+.main {
+  /*Normalmente queremoso que nuestro main abarque el 70%*/
+  width: 70%;
+  background: #fff;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  width: 30%;
+  background: #e5cfee;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+}
