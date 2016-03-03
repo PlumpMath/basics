@@ -39,6 +39,10 @@ $(document).ready(function(){
      $(".menu li").removeClass("activado");
    }
    });
+
+   $(".menu li ul li a").click(function(){
+     window.location.href = $(this).attr("href");
+   });
 });
 
 // (function () {
